@@ -4,6 +4,8 @@ import edtech from "../assets/edtech.jpg";
 import reactdom from "../assets/dom.png";
 import tracker from "../assets/tracker.avif";
 import paymentApp from "../assets/paymentapp.jpg";
+import { motion } from "framer-motion";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
   {
@@ -19,6 +21,22 @@ const projects = [
       "MonoRepo",
     ],
     image: edtech,
+    link: "https://github.com/malisettisamrat/data-science-roadmap",
+  },
+  {
+    title: "Payment App",
+    description:
+      "The Payment App is a full-stack application designed to streamline payment processing, featuring secure transactions and a user-friendly interface. Built using ReactJS for the frontend, Node.js and Express for the backend, and MongoDB for the database, it incorporates robust authentication and efficient API integrations to deliver a seamless payment experience.",
+    technologies: [
+      "ReactJs",
+      "TailwindCSS",
+      "NodeJs",
+      "Express",
+      "MongoDB",
+      "Vercel",
+    ],
+    image: paymentApp,
+    link: "https://github.com/malisettisamrat/payment-app",
   },
   {
     title: "DCMH - Mobile App",
@@ -33,6 +51,7 @@ const projects = [
       "XCode",
     ],
     image: dcmh,
+    link: "https://github.com/MaheshtheDev/DCMH-Mobile",
   },
   {
     title: "Issue Tracker",
@@ -48,6 +67,7 @@ const projects = [
       "Git",
     ],
     image: tracker,
+    link: "https://github.com/malisettisamrat/issue-tracking-system",
   },
   {
     title: "ReactDOM re-render Implementation",
@@ -55,24 +75,30 @@ const projects = [
       "This project, React DOM Implementation, provides a custom implementation of React's reconciliation algorithm and virtual DOM concepts, showcasing the core principles of React's rendering process. Built using JavaScript, it includes features like fiber-based updates and efficient DOM manipulation, offering a hands-on exploration of React's inner workings.",
     technologies: ["Vanilla JavaScript", "ES6", "React"],
     image: reactdom,
-  },
-  {
-    title: "Payment App",
-    description:
-      "The Payment App is a full-stack application designed to streamline payment processing, featuring secure transactions and a user-friendly interface. Built using ReactJS for the frontend, Node.js and Express for the backend, and MongoDB for the database, it incorporates robust authentication and efficient API integrations to deliver a seamless payment experience.",
-    technologies: ["ReactJs", "NodeJs", "Express", "MongoDB"],
-    image: paymentApp,
+    link: "https://github.com/malisettisamrat/react-dom-implementation",
   },
 ];
 
 export const Projects = () => {
   return (
     <div className="border-b border-neutral-900 pb-24">
-      <h1 className="my-20 text-center text-4xl">Projects</h1>
+      <motion.h1
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 1.5 }}
+        className="my-20 text-center text-4xl"
+      >
+        Projects
+      </motion.h1>
       <div>
         {projects.map((project, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-            <div className="w-full lg:w-1/4">
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -100 }}
+              transition={{ duration: 1 }}
+              className="w-full lg:w-1/4"
+            >
               <img
                 className="mb-6 rounded"
                 src={project.image}
@@ -80,9 +106,23 @@ export const Projects = () => {
                 height={150}
                 alt={project.title}
               />
-            </div>
-            <div className="w-full max-w-xl lg:w-3/4">
-              <h6 className="mb-2 font-semibold">{project.title}</h6>
+            </motion.div>
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: 100 }}
+              transition={{ duration: 1 }}
+              className="w-full max-w-xl lg:w-3/4"
+            >
+              <div className="flex mb-2 gap-2 items-center">
+                <h6 className="font-semibold">{project.title}</h6>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaExternalLinkAlt className="cursor-pointer" size={16} />
+                </a>
+              </div>
               <p className="mb-4 text-neutral-400">{project.description}</p>
               {project.technologies.map((technology, index) => (
                 <span
@@ -92,7 +132,7 @@ export const Projects = () => {
                   {technology}
                 </span>
               ))}
-            </div>
+            </motion.div>
           </div>
         ))}
       </div>

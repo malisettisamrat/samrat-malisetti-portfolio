@@ -37,7 +37,7 @@ export const Intro = () => {
               variants={container(1)}
               initial="hidden"
               animate="visible"
-              className="max-w-xl my-1 py-4 font-light tracking-tighter"
+              className="max-w-xl my-1 py-4 font-light tracking-tighter text-center lg:text-left"
             >{`I am a Software Engineer, driven by a passion for building scalable, secure, and impactful software solutions. My expertise spans Software Development, Full-Stack development, Cloud Technologies, and Open-Source contributions, all tied together by a commitment to clean, maintainable code.
 `}</motion.p>
           </div>
@@ -48,7 +48,7 @@ export const Intro = () => {
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
-              className="rounded-md aspect-auto lg:w-100 lg:h-100"
+              className="rounded-lg w-full max-w-sm md:max-w-md lg:max-w-sm xl:max-w-xs h-auto"
               src={profile}
               alt="Samrat Malisetti"
             />
