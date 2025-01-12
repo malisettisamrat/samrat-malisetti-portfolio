@@ -34,7 +34,7 @@ export const Navbar = () => {
           <FaTwitter />
         </a>
         <a
-          href="https://drive.google.com/file/d/1Cc1Mq19iLUAnPF1L4Osy7iwALSDf4GLb/view?usp=drive_link"
+          href="https://drive.google.com/file/d/14WIUmESQ2EeoRNRL-HsFQCy5-NCCcFO7/view?usp=sharing"
           rel="noopener noreferrer"
           target="_blank"
         >
