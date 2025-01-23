@@ -4,6 +4,7 @@ import edtech from "../assets/edtech.jpg";
 import reactdom from "../assets/dom.png";
 import tracker from "../assets/tracker.avif";
 import paymentApp from "../assets/paymentapp.jpg";
+import analytics from "../assets/analytics.png";
 import { motion } from "framer-motion";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
@@ -68,6 +69,22 @@ const projects = [
     ],
     image: tracker,
     link: "https://github.com/malisettisamrat/issue-tracking-system",
+  },
+  {
+    title: "Analytical Dashboard - Media",
+    description:
+      "Developed an analytics dashboard using Next.js and React, hosted on Vercel, to visualize and interpret complex data using libraries recharts and Chart.js. The project focuses on delivering real-time insights through interactive visualizations and a responsive design, enhancing decision-making for users. Integrated efficient data handling and visualization techniques to optimize performance and usability.",
+    technologies: [
+      "React",
+      "NextJs",
+      "TypeScript",
+      "ShadcnUI",
+      "React Hook Forms",
+      "TailwindCSS",
+      "Zod",
+    ],
+    image: analytics,
+    link: "https://github.com/malisettisamrat/analytics-dashboard",
   },
   {
     title: "ReactDOM re-render Implementation",

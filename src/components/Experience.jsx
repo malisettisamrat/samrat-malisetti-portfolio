@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    year: "Oct 2024 - Present",
-    role: "Engineering Consultant",
+    year: "Oct 2024 - Jan 2025",
+    role: "Full Stack Engineer",
     company: "GorgeousTV Inc.",
     description:
       "As an Engineering Consultant at GorgeousTV, I assessed and optimized GCP virtual machines for Azure migration using Azure Migrate, ensuring resource efficiency and seamless compatibility. I secured Kubernetes database connections with cloud-sql-proxy and implemented robust firewall rules in GCP to streamline migration planning. By mapping workloads and dependencies, I facilitated a structured and efficient migration process to Azure.",
@@ -19,8 +19,8 @@ const experiences = [
     ],
   },
   {
-    year: "Aug 2022 - Present",
-    role: "OpenSource Contributor",
+    year: "Aug 2022 - Sep 2024",
+    role: "Open Source Contributor",
     company: "Freelance",
     description:
       "Contributed to projects like FiguringOut, SuperMemory, and Wordcorn by enhancing UI/UX, improving functionality, and optimizing performance. Collaborated with distributed teams to integrate APIs seamlessly and proposed codebase optimizations for better maintainability and scalability. Focused on improving application accessibility and reducing redundancy for a refined user experience.",
@@ -37,7 +37,7 @@ const experiences = [
     ],
   },
   {
-    year: "Oct 2021 - Juul 2022",
+    year: "Jul 2021 - Aug 2022",
     role: "Software Engineer",
     company: "ZeMoSo Technologies",
     description:
@@ -45,7 +45,7 @@ const experiences = [
     skills: ["React Native", "Expo", "TypeScript", "GraphQL", "AWS", "XCode"],
   },
   {
-    year: "Aug 2021 - Sep 2021",
+    year: "May 2021 - Jun 2021",
     role: "Software Engineer Intern",
     company: "ZeMoSo Technologies",
     description:
@@ -61,7 +61,7 @@ const experiences = [
     ],
   },
   {
-    year: "Jan 2021 - Jun 2021",
+    year: "Jan 2020 - Apr 2021",
     role: "Software Engineer",
     company: "KeeStep",
     description:
